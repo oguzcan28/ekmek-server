@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index",
-    "start": "node index"
+    "start": "node index",
+    "client": "cd client && npm run build"
   },
   "repository": {
     "type": "git",

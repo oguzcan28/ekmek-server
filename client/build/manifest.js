@@ -3,7 +3,7 @@ export const manifest = {
 	assets: new Set(["favicon.png","favicon2.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"start-97b2272f.js","js":["start-97b2272f.js","chunks/index-9bb57aba.js","chunks/index-b6c2940e.js"],"css":[]},
+		entry: {"file":"start-e5d21ee1.js","js":["start-e5d21ee1.js","chunks/index-3fa2dbb6.js"],"css":[]},
 		nodes: [
 			() => import('./server/nodes/0.js'),
 			() => import('./server/nodes/1.js'),

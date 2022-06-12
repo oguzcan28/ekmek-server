@@ -5,19 +5,15 @@
 <script>
   import { socket } from "$lib/realtime.js";
   import { onMount } from "svelte";
-  import { logs } from "../stores/logs";
 
-  let loglar = $logs;
+  let logs = [];
+
+  $: total = logs.length;
 
   const logPusher = log => {
-    loglar.push(log);
+    logs.push(log);
+    logs = [...logs];
   };
-
-  $: total = $logs.length;
-
-  $: {
-    $logs = loglar;
-  }
 
   onMount(async () => {
     socket.on("connect", () => {
@@ -36,9 +32,9 @@
   <h1>Ekmek'e Hoşgeldin!</h1>
 </div>
 
-<div class="p-5">
+<div class="p-5 font-mono">
   <h1>{total} adet log mevcut</h1>
-  {#each $logs as log}
+  {#each logs as log}
     <p>{log}</p>
   {/each}
 </div>
