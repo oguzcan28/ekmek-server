@@ -1,15 +1,17 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-const http = require('http');
+import http from 'http';
 const server = http.createServer(app);
-const { Server } = require("socket.io");
+import { Server } from "socket.io";
 const io = new Server(server);
+import { handler } from './client/build/handler.js';
 
 io.on('connection', (socket) => {
   console.log('a user connected');
 
   socket.on("logSender", log => {
-    console.log(log);
+    // console.log(log);
+    io.emit("frontend", log);
   });
 
   socket.on('disconnect', () => {
@@ -17,6 +19,9 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+app.use(handler);
+
+const port = process.env.PORT || 5000;
+server.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
 });
