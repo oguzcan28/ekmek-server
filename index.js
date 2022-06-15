@@ -1,10 +1,17 @@
+import { handler } from './svelte/build/handler.js';
 import express from 'express';
 const app = express();
 import http from 'http';
 const server = http.createServer(app);
 import { Server } from "socket.io";
-const io = new Server(server);
-import { handler } from './client/build/handler.js';
+
+const io = new Server(server, {
+  // once development has finished, delete cors.
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"]
+  },
+});
 
 io.on('connection', (socket) => {
   console.log('a user connected');
