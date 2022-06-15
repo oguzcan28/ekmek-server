@@ -1,6 +1,6 @@
 {
-  "name": "client",
-  "version": "0.0.1",
+  "name": "ekmek-svelte",
+  "version": "1.0.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -23,6 +23,8 @@
   },
   "type": "module",
   "dependencies": {
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.3.8",
     "socket.io-client": "^4.5.1"
   }
 }

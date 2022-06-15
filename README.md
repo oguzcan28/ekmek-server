@@ -4,20 +4,21 @@ Easily access your mining rig logs anywhere all over the 🌎.
 ## How it works?
 Just replace [**Ekmek Client**](https://github.com/ErcouldnT/ekmek-client) near your log file, modify it and check the [**website**](https://ekmek.herokuapp.com).
 
-> *Desktop app and also mobile app are on the way...*
+> *Desktop Client and also Mobile App are on the way!*
 
 ## Used technologies:
 ### Backend
-> Express \
-Socket.io \
-Dotenv \
-Mongoose
+> Node.js \
+Express \
+Socket.io
 
 ### Frontend
 > SvelteKit \
 Node adapter \
+Tailwind CSS \
 Socket.io-client \
-Tailwind CSS
+Dotenv \
+Mongoose
 
 ### Development
 > Nodemon \
@@ -29,6 +30,9 @@ Cloudflare \
 MongoDB Atlas
 
 ## Todo
+  * [ ] User login.
+  * [ ] Fix favicon.
+  * [ ] Add linting.
   * [ ] Change theme.
   * [ ] Better UI & UX.
   * [ ] Robot.txt and SEO.
