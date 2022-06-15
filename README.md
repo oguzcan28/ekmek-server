@@ -29,9 +29,12 @@ Cloudflare \
 MongoDB Atlas
 
 ## Todo
-  * [ ] Build Svelte files at Heroku build time.
-  * [x] Socket Cors parameters.
+  * [ ] Change theme.
   * [ ] Better UI & UX.
+  * [ ] Robot.txt and SEO.
+  * [x] Socket Cors parameters.
+  * [ ] Analyze every log and categorize it.
+  * [ ] Build Svelte files at Heroku build time.
 
 ## Join development
 0. Clone this repo
