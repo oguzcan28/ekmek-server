@@ -1,19 +1,20 @@
 {
   "name": "ekmek-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easily access your mining rig logs anywhere all over the 🌎.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon index",
     "start": "node index",
-    "client": "cd client && npm run build"
+    "svelte:dev": "cd svelte && npm run dev",
+    "svelte:build": "cd svelte && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ErcouldnT/ekmek-server.git"
   },
-  "author": "",
+  "author": "Ercode",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ErcouldnT/ekmek-server/issues"
