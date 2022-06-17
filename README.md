@@ -39,6 +39,7 @@ MongoDB Atlas
   * [ ] Rig restart button.
   * [ ] Robot.txt and SEO.
   * [x] Socket Cors parameters.
+  * [ ] Add Github test workflow.
   * [x] Analyze every log and categorize it.
   * [ ] Send an email & SMS if rig turns off.
   * [ ] Build Svelte files at Heroku build time.

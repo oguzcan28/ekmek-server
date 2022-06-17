@@ -35,9 +35,11 @@
 
     // console.log(gpuList);
 
-    if (gpuList.length < 5) {
+    if (gpuList.length < 6) {
       gpuList.push(gpu);
       gpuList = [...gpuList];
+      // todo: row'a göre sırala.
+      
     };
   };
 
@@ -47,18 +49,20 @@
     });
 
     socket.on("frontend", (log) => {
+      logPusher(log);
+
       // Analyze log here...
       const isUptime = checkUptime(log);
       const isGpu = checkGpu(log);
-
+      
       if (isUptime) {
         bootTime = isUptime;
         // console.log(bootTime);
       };
-
+      
       if (isGpu) {
         // console.log(isGpu);
-
+        
         gpuAdder(isGpu);
         //   for (let i = 0; i < gpuList.length; i++) {
         //     const gpu = gpuList[i];
@@ -79,8 +83,6 @@
         //   gpuList.push(isGpu);
         // gpuList = [...gpuList];
       };
-
-      logPusher(log);
     });
   });
 
@@ -94,7 +96,7 @@
 </script>
 
 <svelte:head>
-  <title>Ekmek | Güncel Rig Verileri</title>
+  <title>Ekmek Teknesi</title>
 </svelte:head>
 
 <DarkModeButton />

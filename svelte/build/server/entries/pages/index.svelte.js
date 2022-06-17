@@ -9,7 +9,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let total;
   let logs = [];
   total = logs.length;
-  return `${$$result.head += `${$$result.title = `<title>Ekmek | G\xFCncel Rig Verileri</title>`, ""}`, ""}
+  return `${$$result.head += `${$$result.title = `<title>Ekmek Teknesi</title>`, ""}`, ""}
 
 ${validate_component(DarkModeButton, "DarkModeButton").$$render($$result, {}, {}, {})}
 
