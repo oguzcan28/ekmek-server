@@ -33,12 +33,17 @@ MongoDB Atlas
   * [ ] User login.
   * [ ] Fix favicon.
   * [ ] Add linting.
-  * [ ] Change theme.
+  * [x] Change theme.
   * [ ] Better UI & UX.
+  * [ ] Add GPU logos.
+  * [ ] Rig restart button.
   * [ ] Robot.txt and SEO.
   * [x] Socket Cors parameters.
-  * [ ] Analyze every log and categorize it.
+  * [x] Analyze every log and categorize it.
+  * [ ] Send an email & SMS if rig turns off.
   * [ ] Build Svelte files at Heroku build time.
+  * [ ] Emergency button & 2 min countdown.
+  * [ ] Save logs to localStorage and sync Store.
 
 ## Join development
 0. Clone this repo
