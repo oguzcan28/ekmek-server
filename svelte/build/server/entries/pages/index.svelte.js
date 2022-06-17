@@ -1,6 +1,5 @@
 import { c as create_ssr_component, v as validate_component, a as add_attribute, e as escape, b as each } from "../../chunks/index-1259f1f6.js";
 import ioClient from "socket.io-client";
-import "moment";
 ioClient("/");
 const DarkModeButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${``}`;
