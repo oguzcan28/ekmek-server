@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index",
-    "start": "node index",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "svelte:dev": "cd svelte && npm run dev",
     "svelte:build": "cd svelte && npm run build"
   },

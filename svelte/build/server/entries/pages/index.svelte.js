@@ -1,16 +1,14 @@
-import { c as create_ssr_component, v as validate_component, a as add_attribute, e as escape, b as each } from "../../chunks/index-1259f1f6.js";
+import { c as create_ssr_component, a as add_attribute, e as escape, b as each } from "../../chunks/index-1259f1f6.js";
 import ioClient from "socket.io-client";
+import "moment";
 ioClient("/");
-const DarkModeButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${``}`;
-});
 const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let total;
   let logs = [];
   total = logs.length;
   return `${$$result.head += `${$$result.title = `<title>Ekmek | G\xFCncel Rig Verileri</title>`, ""}`, ""}
 
-${validate_component(DarkModeButton, "DarkModeButton").$$render($$result, {}, {}, {})}
+
 
 <div class="${"text-center font-mono p-5 text-xl"}"><h1>Ekmek</h1>
   <p${add_attribute("class", "dark:text-white", 0)}>Mining ba\u015Flang\u0131\xE7 ${escape("verisi bekleniyor...")}</p></div>
