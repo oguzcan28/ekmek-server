@@ -29,7 +29,7 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./chunks/index-57608c9a.js";
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./chunks/index-1259f1f6.js";
 function afterUpdate() {
 }
 const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -2346,7 +2346,18 @@ const template = ({
   body,
   assets: assets2,
   nonce
-}) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + "</div>\n	</body>\n</html>\n";
+}) => '<!DOCTYPE html>\n<html lang="tr">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + `/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark');
+				localStorage.theme = 'dark';
+			} else {
+				document.documentElement.classList.remove('dark');
+				// localStorage.theme = 'light';
+			};
+		<\/script>
+		` + head + '\n	</head>\n	<body class="dark:bg-gray-900 bg-gray-100 dark:text-gray-100">\n		<div>' + body + "</div>\n	</body>\n</html>\n";
 let read = null;
 set_paths({
   "base": "",
