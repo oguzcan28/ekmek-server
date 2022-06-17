@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
     "svelte:dev": "cd svelte && npm run dev",
     "svelte:build": "cd svelte && npm run build"
   },
