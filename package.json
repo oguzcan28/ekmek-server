@@ -4,6 +4,10 @@
   "description": "Easily access your mining rig logs anywhere all over the 🌎.",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
