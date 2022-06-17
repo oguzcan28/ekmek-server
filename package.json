@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
     "svelte:dev": "cd svelte && npm run dev",
     "svelte:build": "cd svelte && npm run build"
   },
