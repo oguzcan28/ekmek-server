@@ -1,4 +1,4 @@
-import { handler } from './svelte/build/handler.js';
+import { handler } from '../svelte/build/handler.mjs';
 import express from 'express';
 const app = express();
 import http from 'http';
