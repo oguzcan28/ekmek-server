@@ -1,8 +1,8 @@
 <script>
   import { socket } from "$lib/realtime.js";
   import { onMount } from "svelte";
-  import { checkGpu } from "$lib/modules/checkGpu";
-  import { checkUptime } from "$lib/modules/checkUptime";
+  import { checkGpu } from "$lib/modules/checkGpu.js";
+  import { checkUptime } from "$lib/modules/checkUptime.js";
   import DarkModeButton from "$lib/components/DarkModeButton/index.svelte";
 
   let logs = [];
