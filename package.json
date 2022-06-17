@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ErcouldnT/ekmek-server#readme",
   "devDependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.78",
     "nodemon": "^2.0.16"
   },
   "dependencies": {
